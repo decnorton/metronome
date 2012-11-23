@@ -1,0 +1,955 @@
+/* normalize.css v1.0.1 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/*
+ * Corrects `block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+/* line 21, ../scss/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block; }
+
+/*
+ * Corrects `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+/* line 31, ../scss/_normalize.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+/*
+ * Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 42, ../scss/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/*
+ * Addresses styling for `hidden` attribute not present in IE 7/8/9, Firefox 3,
+ * and Safari 4.
+ * Known issue: no IE 6 support.
+ */
+/* line 53, ../scss/_normalize.scss */
+[hidden] {
+  display: none; }
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. Prevents iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 68, ../scss/_normalize.scss */
+html {
+  font-size: 100%;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */ }
+
+/*
+ * Addresses `font-family` inconsistency between `textarea` and other form
+ * elements.
+ */
+/* line 83, ../scss/_normalize.scss */
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif; }
+
+/*
+ * Addresses margins handled incorrectly in IE 6/7.
+ */
+/* line 91, ../scss/_normalize.scss */
+body {
+  margin: 0; }
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/*
+ * Addresses `outline` inconsistency between Chrome and other browsers.
+ */
+/* line 103, ../scss/_normalize.scss */
+a:focus {
+  outline: thin dotted; }
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers.
+ */
+/* line 112, ../scss/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/*
+ * Addresses font sizes and margins set differently in IE 6/7.
+ * Addresses font sizes within `section` and `article` in Firefox 4+, Safari 5,
+ * and Chrome.
+ */
+/* line 126, ../scss/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* line 131, ../scss/_normalize.scss */
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0; }
+
+/* line 136, ../scss/_normalize.scss */
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0; }
+
+/* line 141, ../scss/_normalize.scss */
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0; }
+
+/* line 146, ../scss/_normalize.scss */
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0; }
+
+/* line 151, ../scss/_normalize.scss */
+h6 {
+  font-size: 0.75em;
+  margin: 2.33em 0; }
+
+/*
+ * Addresses styling not present in IE 7/8/9, Safari 5, and Chrome.
+ */
+/* line 160, ../scss/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/*
+ * Addresses style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
+ */
+/* line 169, ../scss/_normalize.scss */
+b,
+strong {
+  font-weight: bold; }
+
+/* line 173, ../scss/_normalize.scss */
+blockquote {
+  margin: 1em 40px; }
+
+/*
+ * Addresses styling not present in Safari 5 and Chrome.
+ */
+/* line 181, ../scss/_normalize.scss */
+dfn {
+  font-style: italic; }
+
+/*
+ * Addresses styling not present in IE 6/7/8/9.
+ */
+/* line 189, ../scss/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/*
+ * Addresses margins set differently in IE 6/7.
+ */
+/* line 199, ../scss/_normalize.scss */
+p,
+pre {
+  margin: 1em 0; }
+
+/*
+ * Corrects font family set oddly in IE 6, Safari 4/5, and Chrome.
+ */
+/* line 210, ../scss/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em; }
+
+/*
+ * Improves readability of pre-formatted text in all browsers.
+ */
+/* line 220, ../scss/_normalize.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+/*
+ * Addresses CSS quotes not supported in IE 6/7.
+ */
+/* line 230, ../scss/_normalize.scss */
+q {
+  quotes: none; }
+
+/*
+ * Addresses `quotes` property not supported in Safari 4.
+ */
+/* line 239, ../scss/_normalize.scss */
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+/*
+ * Addresses inconsistent and variable font size in all browsers.
+ */
+/* line 248, ../scss/_normalize.scss */
+small {
+  font-size: 80%; }
+
+/*
+ * Prevents `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 257, ../scss/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 264, ../scss/_normalize.scss */
+sup {
+  top: -0.5em; }
+
+/* line 268, ../scss/_normalize.scss */
+sub {
+  bottom: -0.25em; }
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+/*
+ * Addresses margins set differently in IE 6/7.
+ */
+/* line 283, ../scss/_normalize.scss */
+dl,
+menu,
+ol,
+ul {
+  margin: 1em 0; }
+
+/* line 287, ../scss/_normalize.scss */
+dd {
+  margin: 0 0 0 40px; }
+
+/*
+ * Addresses paddings set differently in IE 6/7.
+ */
+/* line 297, ../scss/_normalize.scss */
+menu,
+ol,
+ul {
+  padding: 0 0 0 40px; }
+
+/*
+ * Corrects list images handled incorrectly in IE 7.
+ */
+/* line 306, ../scss/_normalize.scss */
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none; }
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * 1. Removes border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improves image quality when scaled in IE 7.
+ */
+/* line 320, ../scss/_normalize.scss */
+img {
+  border: 0;
+  /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */ }
+
+/*
+ * Corrects overflow displayed oddly in IE 9.
+ */
+/* line 329, ../scss/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/*
+ * Addresses margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+ */
+/* line 341, ../scss/_normalize.scss */
+figure {
+  margin: 0; }
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/*
+ * Corrects margin displayed oddly in IE 6/7.
+ */
+/* line 353, ../scss/_normalize.scss */
+form {
+  margin: 0; }
+
+/*
+ * Define consistent border, margin, and padding.
+ */
+/* line 361, ../scss/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/*
+ * 1. Corrects color not being inherited in IE 6/7/8/9.
+ * 2. Corrects text not wrapping in Firefox 3.
+ * 3. Corrects alignment displayed oddly in IE 6/7.
+ */
+/* line 373, ../scss/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  white-space: normal;
+  /* 2 */
+  *margin-left: -7px;
+  /* 3 */ }
+
+/*
+ * 1. Corrects font size not being inherited in all browsers.
+ * 2. Addresses margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improves appearance and consistency in all browsers.
+ */
+/* line 390, ../scss/_normalize.scss */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  vertical-align: baseline;
+  /* 3 */
+  *vertical-align: middle;
+  /* 3 */ }
+
+/*
+ * Addresses Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 403, ../scss/_normalize.scss */
+button,
+input {
+  line-height: normal; }
+
+/*
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Corrects inability to style clickable `input` types in iOS.
+ * 3. Improves usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Removes inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+/* line 420, ../scss/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+  *overflow: visible;
+  /* 4 */ }
+
+/*
+ * Re-set default cursor for disabled elements.
+ */
+/* line 431, ../scss/_normalize.scss */
+button[disabled],
+input[disabled] {
+  cursor: default; }
+
+/*
+ * 1. Addresses box sizing set to content-box in IE 8/9.
+ * 2. Removes excess padding in IE 8/9.
+ * 3. Removes excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+/* line 443, ../scss/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+  *height: 13px;
+  /* 3 */
+  *width: 13px;
+  /* 3 */ }
+
+/*
+ * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 456, ../scss/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/*
+ * Removes inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 469, ../scss/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/*
+ * Removes inner padding and border in Firefox 3+.
+ */
+/* line 478, ../scss/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/*
+ * 1. Removes default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improves readability and alignment in all browsers.
+ */
+/* line 488, ../scss/_normalize.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */ }
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/*
+ * Remove most spacing between table cells.
+ */
+/* line 501, ../scss/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+@font-face {
+  font-family: 'Roboto';
+  src: url("/fonts/roboto-bold-webfont-webfont.eot");
+  src: url("/fonts/roboto-bold-webfont-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/roboto-bold-webfont-webfont.woff") format("woff"), url("/fonts/roboto-bold-webfont-webfont.ttf") format("truetype"), url("/fonts/roboto-bold-webfont-webfont.svg#RobotoBold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("/fonts/roboto-regular-webfont-webfont.eot");
+  src: url("/fonts/roboto-regular-webfont-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/roboto-regular-webfont-webfont.woff") format("woff"), url("/fonts/roboto-regular-webfont-webfont.ttf") format("truetype"), url("/fonts/roboto-regular-webfont-webfont.svg#RobotoRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* line 44, ../scss/_boilerplate.scss */
+html,
+button,
+input,
+select,
+textarea {
+  color: #222; }
+
+/* line 48, ../scss/_boilerplate.scss */
+body {
+  font-size: 1em;
+  line-height: 1.4; }
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+/* line 59, ../scss/_boilerplate.scss */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+/* line 64, ../scss/_boilerplate.scss */
+::selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+/*
+ * A better looking default horizontal rule
+ */
+/* line 73, ../scss/_boilerplate.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+/* line 86, ../scss/_boilerplate.scss */
+img {
+  vertical-align: middle; }
+
+/*
+ * Remove default fieldset styles.
+ */
+/* line 94, ../scss/_boilerplate.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+/* line 104, ../scss/_boilerplate.scss */
+textarea {
+  resize: vertical; }
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+/* line 112, ../scss/_boilerplate.scss */
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Image replacement
+ */
+/* line 147, ../scss/_boilerplate.scss */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px; }
+
+/* line 155, ../scss/_boilerplate.scss */
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%; }
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+/* line 166, ../scss/_boilerplate.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden; }
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+/* line 175, ../scss/_boilerplate.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+/* line 192, ../scss/_boilerplate.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+/* line 205, ../scss/_boilerplate.scss */
+.invisible {
+  visibility: hidden; }
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+/* line 222, ../scss/_boilerplate.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+/* line 227, ../scss/_boilerplate.scss */
+.clearfix:after {
+  clear: both; }
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+/* line 236, ../scss/_boilerplate.scss */
+.clearfix {
+  *zoom: 1; }
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */ }
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
+  /* Style adjustments for high resolution devices */ }
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+@media print {
+  /* line 261, ../scss/_boilerplate.scss */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important; }
+
+  /* line 269, ../scss/_boilerplate.scss */
+  a,
+  a:visited {
+    text-decoration: underline; }
+
+  /* line 273, ../scss/_boilerplate.scss */
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+
+  /* line 277, ../scss/_boilerplate.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+  /* line 287, ../scss/_boilerplate.scss */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: ""; }
+
+  /* line 292, ../scss/_boilerplate.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+
+  /* line 297, ../scss/_boilerplate.scss */
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */ }
+
+  /* line 302, ../scss/_boilerplate.scss */
+  tr,
+  img {
+    page-break-inside: avoid; }
+
+  /* line 306, ../scss/_boilerplate.scss */
+  img {
+    max-width: 100% !important; }
+
+  @page {
+    margin: 0.5cm; }
+
+  /* line 316, ../scss/_boilerplate.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
+
+  /* line 322, ../scss/_boilerplate.scss */
+  h2,
+  h3 {
+    page-break-after: avoid; } }
+/* line 12, ../scss/style.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 16, ../scss/style.scss */
+body, html {
+  padding: 0;
+  margin: 0;
+  height: 100%; }
+
+/* line 22, ../scss/style.scss */
+body {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 100, color-stop(0%, #555a5f), color-stop(100%, #1c1e20));
+  background: -webkit-radial-gradient(#555a5f, #1c1e20);
+  background: -moz-radial-gradient(#555a5f, #1c1e20);
+  background: -o-radial-gradient(#555a5f, #1c1e20);
+  background: radial-gradient(#555a5f, #1c1e20); }
+
+/* line 28, ../scss/style.scss */
+.wrapper {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0 10px; }
+
+/* line 35, ../scss/style.scss */
+.header {
+  padding-top: 30px; }
+  /* line 37, ../scss/style.scss */
+  .header h1 {
+    margin: 0 0 30px 0;
+    color: #eee;
+    font-size: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbbbbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaaaaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 20px 20px rgba(0, 0, 0, 0.15); }
+
+/* line 60, ../scss/style.scss */
+.metronome .indicator {
+  width: 20px;
+  height: 20px;
+  margin: 30px auto;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%; }
+  /* line 66, ../scss/style.scss */
+  .metronome .indicator.green {
+    background: lime;
+    -webkit-box-shadow: 0 0 10px lime;
+    -moz-box-shadow: 0 0 10px lime;
+    box-shadow: 0 0 10px lime; }
+  /* line 71, ../scss/style.scss */
+  .metronome .indicator.red {
+    background: red;
+    -webkit-box-shadow: 0 0 10px red;
+    -moz-box-shadow: 0 0 10px red;
+    box-shadow: 0 0 10px red; }
+/* line 79, ../scss/style.scss */
+.metronome .settings > div {
+  padding: 10px;
+  margin: 10px 0;
+  background: #efefef;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  *zoom: 1; }
+/* line 89, ../scss/style.scss */
+.metronome .settings label {
+  display: block;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  font-weight: normal; }
+/* line 97, ../scss/style.scss */
+.metronome .settings input {
+  background: transparent; }
+/* line 101, ../scss/style.scss */
+.metronome .settings input[type="range"] {
+  -webkit-appearance: none;
+  width: 90%;
+  height: 6px;
+  margin: 12px 0;
+  float: left;
+  border: 1px solid #b6b6b6;
+  border-bottom: 1px solid #7d7d7d;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #565656), color-stop(100%, #888888));
+  background: -webkit-linear-gradient(#565656, #888888);
+  background: -moz-linear-gradient(#565656, #888888);
+  background: -o-linear-gradient(#565656, #888888);
+  background: linear-gradient(#565656, #888888);
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px; }
+/* line 117, ../scss/style.scss */
+.metronome .settings input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #888;
+  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 2, color-stop(0%, #666666), color-stop(100%, #666666), color-stop(100%, transparent)), -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #dfdfdf));
+  background: -webkit-radial-gradient(#666666, #666666 2px, transparent 2px), -webkit-linear-gradient(#ffffff, #dfdfdf);
+  background: -moz-radial-gradient(#666666, #666666 2px, transparent 2px), -moz-linear-gradient(#ffffff, #dfdfdf);
+  background: -o-radial-gradient(#666666, #666666 2px, transparent 2px), -o-linear-gradient(#ffffff, #dfdfdf);
+  background: radial-gradient(#666666, #666666 2px, transparent 2px), linear-gradient(#ffffff, #dfdfdf);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-box-shadow: inset 0 1px 8px white, 0 0 1px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: inset 0 1px 8px white, 0 0 1px rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 1px 8px white, 0 0 1px rgba(0, 0, 0, 0.6); }
+  /* line 126, ../scss/style.scss */
+  .metronome .settings input[type='range']::-webkit-slider-thumb:active {
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 2, color-stop(0%, #666666), color-stop(100%, #666666), color-stop(100%, transparent)), -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #eeeeee), color-stop(100%, #cfcfcf));
+    background: -webkit-radial-gradient(#666666, #666666 2px, transparent 2px), -webkit-linear-gradient(#eeeeee, #cfcfcf);
+    background: -moz-radial-gradient(#666666, #666666 2px, transparent 2px), -moz-linear-gradient(#eeeeee, #cfcfcf);
+    background: -o-radial-gradient(#666666, #666666 2px, transparent 2px), -o-linear-gradient(#eeeeee, #cfcfcf);
+    background: radial-gradient(#666666, #666666 2px, transparent 2px), linear-gradient(#eeeeee, #cfcfcf);
+    -webkit-box-shadow: inset 0 1px 8px rgba(255, 255, 255, 0.2), 0 0 1px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: inset 0 1px 8px rgba(255, 255, 255, 0.2), 0 0 1px rgba(0, 0, 0, 0.6);
+    box-shadow: inset 0 1px 8px rgba(255, 255, 255, 0.2), 0 0 1px rgba(0, 0, 0, 0.6); }
+/* line 132, ../scss/style.scss */
+.metronome .settings input[type="number"] {
+  width: 10%;
+  height: 30px;
+  float: right;
+  text-align: center;
+  border: none;
+  outline: none;
+  cursor: pointer; }
+/* line 143, ../scss/style.scss */
+.metronome .toggle {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 20px 0;
+  border: none;
+  color: #efefef;
+  font-family: 'Roboto', sans-serif;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
+  border-bottom: 1px solid #333;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #777777), color-stop(100%, #444444));
+  background: -webkit-linear-gradient(#777777, #444444);
+  background: -moz-linear-gradient(#777777, #444444);
+  background: -o-linear-gradient(#777777, #444444);
+  background: linear-gradient(#777777, #444444);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.2), 0 6px 20px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.2), 0 6px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.2), 0 6px 20px rgba(0, 0, 0, 0.3); }
+  /* line 159, ../scss/style.scss */
+  .metronome .toggle.playing {
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #dd0000), color-stop(100%, #880000));
+    background: -webkit-linear-gradient(#dd0000, #880000);
+    background: -moz-linear-gradient(#dd0000, #880000);
+    background: -o-linear-gradient(#dd0000, #880000);
+    background: linear-gradient(#dd0000, #880000); }
+  /* line 163, ../scss/style.scss */
+  .metronome .toggle:active {
+    background: #444;
+    -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2); }
+/* line 169, ../scss/style.scss */
+.metronome .hint {
+  color: #ddd;
+  font-size: 11px;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8); }
+
+/* line 177, ../scss/style.scss */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  color: #ddd;
+  font-size: 11px;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8); }
+  /* line 186, ../scss/style.scss */
+  .footer a {
+    color: #ddd;
+    text-decoration: none; }
